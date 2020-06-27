@@ -39,7 +39,7 @@ class _RandomWordsState extends State<RandomWords> {
 
   Widget _buildSuggestions(){
     return ListView.builder(
-      itemBuilder:(context,i){
+      itemBuilder: /*1 */(context,i){
         if(i.isOdd) return Divider(); 
 
         final index = i ~/ 2; 
