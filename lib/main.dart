@@ -40,7 +40,7 @@ class _RandomWordsState extends State<RandomWords> {
   Widget _buildSuggestions(){
     return ListView.builder(
       itemBuilder: /*1 */(context,i){
-        if(i.isOdd) return Divider(); 
+        if(i.isOdd) return Divider();  /**2 */
 
         final index = i ~/ 2; 
         if (index >= _suggestions.length){
