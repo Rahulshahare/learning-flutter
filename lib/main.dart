@@ -62,3 +62,10 @@ class _RandomWordsState extends State<RandomWords> {
   }
 
 }
+
+/**
+ * The Second Part 
+ * -Implement interactivity by adding a clickable heart icon to save favorite pairings.
+ * -Implement navigation to a new route by adding a new screen containing the saved favorites.
+ * -Modify the theme color, making an all-white app.
+ */
