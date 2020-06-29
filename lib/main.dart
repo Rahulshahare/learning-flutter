@@ -4,6 +4,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
+import 'package:myworld/slide_right_transition.dart';
 
 void main() => runApp(MyApp());
 
@@ -79,7 +80,10 @@ class _RandomWordsState extends State<RandomWords> {
       appBar: AppBar(
         title: Text('Startup Name Generator'),
         actions: [
-          IconButton(icon: Icon(Icons.list), onPressed: _pushSaved),
+          IconButton(
+            icon: Icon(Icons.list), 
+            onPressed: _pushSaved,
+          ),
         ],
       ),
       body: _buildSuggestions(),
@@ -88,6 +92,10 @@ class _RandomWordsState extends State<RandomWords> {
   // #enddocregion RWS-build
 
   void _pushSaved() {
+    // Navigator.push(
+    //   context,
+    //   SlideRightRoute(widget: DetailScreen()),
+    // );
     Navigator.of(context).push(
       MaterialPageRoute<void>(
         // NEW lines from here...
@@ -115,6 +123,7 @@ class _RandomWordsState extends State<RandomWords> {
           );
         }, //...to here.
       ),
+      
     );
   }
   // #docregion RWS-var
